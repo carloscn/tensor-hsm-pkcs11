@@ -1,18 +1,167 @@
+# Build artifacts
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+*.lib
+
+# Build directories
 [Bb]in/
 [Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+[Oo]utput/
+[Ll]og/
+
+# Platform-specific build artifacts
+/build/android/libs/
+/build/android/obj/
+/build/ios/build/
+/build/ios/*.a
+/build/ios/*.framework
+/build/linux/*.so
+/build/linux/*.o
+/build/macos/*.dylib
+/build/macos/*.o
+/build/windows/*.dll
+/build/windows/*.exe
+/build/windows/*.lib
+/build/windows/Win32/
+/build/windows/x64/
+
+# Temporary build files
+Makefile.x86
+Makefile.x64
+Makefile.arm64
+Makefile.x86_64
+*.tmp
+*.temp
+
+# Test artifacts and temporary files
+tests/*.bin
+tests/*.pem
+tests/*.crt
+tests/*.key
+tests/*.p12
+tests/*.pfx
+tests/test_data_*.bin
+tests/signature_*.bin
+tests/hash_*.bin
+tests/pubkey_*.pem
+tests/cert_temp_*.pem
+tests/openssl_engine_test.cnf
+tests/test_data_*.bin
+
+# IDE and editor files
+.vs/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.settings/
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Visual Studio files
 *.userprefs
-test-results/
-TestResults/
 *.sdf
 *.suo
 *.user
-Debug/
-Release/
+*.suo
+*.useros
+*.sln.docstates
 ipch/
-.vs/
-/build/android/libs
-/build/ios/build
-/build/ios/*.a
-/build/linux/*.so
-/build/macos/*.dylib
-/build/windows/*.dll
+*.aps
+*.pch
+*.vspscc
+*.vssscc
+*.ncb
+*.opensdf
+*.sdf
+*.cachefile
+*.VC.db
+*.VC.VC.opendb
+
+# Xcode files
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+*.xcworkspace
+!*.xcworkspace/contents.xcworkspacedata
+*.xcuserdata
+*.xcscmblueprint
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Certificates and keys (sensitive files)
+*.crt
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+!tests/*.crt.example
+!tests/*.key.example
+
+# Logs and debug files
+*.log
+*.out
+*.err
+core
+core.*
+vgcore.*
+valgrind-out.txt
+*.stackdump
+
+# Package files
+*.tar
+*.tar.gz
+*.zip
+*.rar
+*.7z
+
+# Documentation build
+docs/_build/
+docs/.doctrees/
+
+# Environment and config files
+.env
+.env.local
+.env.*.local
+*.local
+config.local.*
+
+# Coverage reports
+*.gcov
+*.gcda
+*.gcno
+coverage/
+*.lcov
+
+# Profiling data
+*.prof
+gmon.out
+perf.data*
+
+# Backup files
+*.bak
+*.backup
+*.orig

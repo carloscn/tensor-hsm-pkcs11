@@ -22,6 +22,13 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include <unistd.h>
+#include <pthread.h>
+#include <curl/curl.h>
+#include <openssl/evp.h>
+#include "https_client.h"
 
 
 // Removes unused parameter warning
